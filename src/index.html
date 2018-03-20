@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Bootstrap 4 Layout</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYEAYAAACw5+G7AAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAANq0lEQVRYw92XV3RV1aKGv7nmWnvv1J1KJyAEkNDxoBgpKlIVAQWxK4KFKIioFEEUFERgoCgQkYCAeixYwIYIgkIAMUpvl4QkEKQkpECyyV5tzvN27hjnDse9z/d//P+X/3v8BP9L1nRIWq81QnSTlUAnuSVYB9YuY3igENJDRgvrYej4gkwP7YcHA8Y+aylYbVUbY4luuWpE3sgDNfU/ir4sJDd26GM7pJCLKHTzA2uDreCj5rLSsuHoVOvOwASo2Gc1D0wFp5nRWW4HDq19uniKEOi/+2f+3bDq/phHtKalGuyFQe40JvI9pITVJX8s9JklXlFvQN9W+n69FW5SuoU+D1kFPIoBzmu6QKxQc1Jrk5rHd6s6I2qvdIpeMh694Rp5QBaFdlr9jOlmP3p3mCY/M3vA7jqZL5fAr3FygLkediQY4+T9UFn3+OH2z2jtd1z53vFYISj5z5/iP4v3A2KQ1kiRax6ExLuNH81RcEOaUW1dhDvyZEpoDwy6aswKDIMmf8g3Ak+i48bJbqFUhCiQC4ITgLm8Zc3UH7lNj9x/2b3QlZhjPS/tE0usYjvbz08rZro1LLDH/Fb3NQutYmIjO8zLpg/nJ1mZwVdgU3fzOfMh+K6H7GRK2LtGHjFfhytLlxbvWy0E/t8CrLgsemiPJqLaeJR9I5KMW+SDFM1basQEJrK/7S8yJdSNjcZE4/7ACP0VKXJScCrrEHJ9KEtcBlkYnM1ikEsCUwiBrgm09A0oqYp0rUmHo+WVDbw0qA/5DdJWgNXK2irT0XKz9TntqbJ+DySBWin7mE3g5EhDybnw0lgRErfD10VLs/5cLwTn/g2gdbfD3Q5zDRhDjCHia5LEHHlAtvvgq6MzP1kwdLczl9pgzYLORhtrvH8wMxzYEhPrDMOy7GCa+wCYTwYP+x+BusU83Gw+mFHrx/BbIL3gq+IxkEmhBM6C+5H8xA1D2T1Xf7liwOGKyhOyCPSHxrjE7WAa5jfGJLB2BuJQuMZlazDZRZftMcG3/MwpF/NaP1QqM77rqetED+Z5BQSwQA8xQUklTQ8YyMD2XakydjCtx+aBhZlTpoy9ceHZDtEjLTYk/irqzXxDUBVXHpPktMcKPhh4358Bsq/1CLfBsZtqBw0rg6sPqNG9RwOVOiH0MNBDZ9AMgm2MhdbnkLE/PChxNZxJq99VvRbqiv2I2gCmaxYZk0CutZpwCDvyUtzZq3sSe/2WnLWuttuQr8WbRmnDh1KuFdXshd9Hcxet4bgWWnfo2KFj8lYwqo3qyR3AyDayx//MArOH9UXSbJ0ulTwnDVrLR81sjosl1myzGsEg+ZRsBbxqXid/gOP7I49nb4aT2yIZY5LBjzUXtagGeUeoFQ+DGGkt1xvgku9nXfXgz6PVlURAz5HLY28D84i1QTQF89fAMDLQZTtSbqucTpedznX3uX38hOqpzXWj5Jo51BFPk9ze4kP6weI9Jjh1Tl3SZjAaGg0z88B4xHgkcThT9CN6mzwpULfKiQCquf860EfP9QcDmEPNocADaqncDA1fk10LR8CFg3Ljqfeh+hptNNsN7NIX5B1Qrz3hb4Zzh6PPq5GgN8pQ3E9g5llfidvB/Mb8FMBYbK3QLsL7Z+xG9TCHRKfYmYF6SWCkESac+AWnqIfMZ8UxekNSQwPsHDunUQbYr9qvtvwGnK3OVhNO2HvtfNC2Yzq7QRc6HZwDwA9OobMLqHb2OruAkLPX2Q6JBXrKxdbQYJTsf6AA5BP6s8vrQK1Q99AMKoc66b4NVRO8yYHeYB6wqoznwXQtizQwI5YJYKRaa9Tn4BXHDacCZEHsn4E1EGwhj2CZKnhJboGWmwJb5SfQKMsAO9lObr0C7H52vya5aHuWPUt09p9yf3e2Qu3mwAR/KNT2DufjQLSP6Xlp4J32I87doKe5+c5aMFPcv+pehIZtxMcHiyFxufip6D2IfOlH/FegfJQ/UqwEf6qMBuaBGbSGEw/mp9YM1oJxOnCYNND3hPb688H9MnG++AzMPqGnzZshNE3WgugUHChLocnyUDN5AFp/YoKz0dnYrgsY9xj3JP/GZrOd2YYH6prGa/kwuPXty+PXQ8y0jNPxEfDXXHnE8UBNqXnBXQZG+8t/qF1g9qrL9l6G+Bxnctl5SO+qh/yxHHU4l+wusRhXGlg9zW/Bzwl21kPA7RJb4V8L3s7YFO84ODJujD8ZavuHbacLVCc0/ki+B9aY0BTzRpCFciPQVqfqbZC8hpkkQLueJtruZffqfog5Mle+G9vWLtH1qg6jLrnl0uR1kPpQ201xDoRGJFbIPNDzUhcHCkH39XLlctA/2eV+AHRV7Q1uHVq+FimLDOFKUr1akh9P8cnrgydvW0nbv3IDqRlZxEVvi59g7IBoduI/9VhwamK+FGPAJfCm+TK4CYGiwHTwXrYyjMkQ6GDUy22gD1BPHwzdlQ0Qe4Zy6qH7BZNf3ffc3DjbztDxSkcnVnyfUmwtiUsON++yO3yMmuD5uCd0DJDqd7bvBYG6W90IIioCqgj4NbjM349Sb8T/ri3OqZwmq/QwTui1mX1LcrBLnkuoWjOb9pXfnXtveF8g9UrvzkNBv6NPhx4ErenDHNANWEAGyCK9jq1gtMInALotw7gbdLKeyykS9Fl+JhBdp4v0QprGPS5nnRMVIqUmpXpc2rfBL4J99F3/GJfWpPmM1LJMJ75DMEUM0e38q4ChznrrgbN+ljsa9Iv6A+92HHe6dULdTJl/tMNvciyFxk2dXzMm0aDqdOM3/Qq6fnuoYcMLmcRdXRQ79uJCMLY5pfGpEDjllDZrCeZOYclGIOuMH+gO8oBoiQXygvEJZ0DOE2/ofqBeFqnV+spAsUj0t3M2bTL+IX4PeCvzTN30sT8zv91ZlnR90phgbdYHMiUuxxp0yx3ipEp1HiQToXeqC8AMtVQdRbsnjHzVkAqnLG25+S6FYnGHzOBJnNCca69Ih25Y1nLvQcLRD/yzug0mjc3T7q0g6hol7RsL7v7Q3Wfng9H9+KHoKgguqM3LfguMYhUJx4NerY+rTuC2oaRmIdRliz8OzYFzkZQvV/6X7dc/m1ZQ/N7BUVxMyAnW599ryrwMK+aP5oUylyq+7PUhUs/3MpMXY3mP+mHGslV9pcrBXqdKVZiyyA/t341/h40x2zv3iD1B9+CExh/LVLobUavQPkFYddMz/DyIXlXL9LMgrlIiR4I5Uz7h3wLqqZTNZ3+D+rx2s1d0Bb2ltMf5DRB7XdXrt/pgHzGGnH8bqpvF99ocgsq9adZP6XAlr2nO4b7JU7zVoY32j71P+j8Yt/p3bhpgIlVH/3J0IlIXKF19HvQAtc+tBtXTLzI1hSrJPwH2h8rU/SnBbX1f6BjbQp82bR1MYrTIkV3cVMLEsFGtAH1Sj1MORPNUqX4ARD6Yo0B2JMxDIMeJUX5X8CakVpT9BpFtxvRPB0O0T/DxIx9DZE/sL8UDoO6vtMDxeeAtSehd1RktN8oyprkn1XZuN36oGqQ/Bv1hfWsDVD9v9qkN4LWzP1u+ALz9dtrPPcCdFH1RpzHaW2RPxg6tc9OjBu3tU+e21f5Ihb/a7e0+y1kkFX4bAH70W4N6WDfx+0D9Q/7NbAOjNd3NVDBjUGYAzCDCDIJZa4wxeoJ4N6WgfCxE67LObOkE3tlW4kgmyOZJ2+pt6k1fnpdVOtF8kUTzhZ8TrAqwKpYPN78A84tTs0zwA25DNwP8Vt7Nf/4FOsZv8vYC8Hu6v3S4lmSV4z/WYrr1vfpYxRsL/YWln9TcRivn607TYmyOmHGhBKMjXWmui9QkDN1Ff67CIGZ6B6iA2Dinrd4F3jPBaqM1qDSj2pwD/gky/RCot0RbdS+Yj5uZ6lfwD2LId0Ct4jo5U001c8HMLd3rZ4Cf8XY+c4G5f1YwAhjhNv+3D2g9dVmz8WSDivN/Cx0DL8WeMXUEqAy/7EmPVfp59WXjRue7xOUGdhEfjLtzcNOnKEsZn1Ua8xKL+IVL9mHCfoXa75RCWVKkrXcnbDrgfR9aAkevD7YIpsPp7YmBwCWoeTNmk3oBz84QA9x0qp1sbnVXE7IPYdhHed0tALfg/Dk3BtyYFSXR0RAdPX+n/zr4r9s3VZYIUVnCnv8hNFq/IBq8RhrYt0YONrgeVNjf9+RuXPWO/9mYxTWLjGuMUV69s2lAuOl0sSztrV7nkrtl3GRcZ5Y6pYH3qeI5pxzorbs6l8Dp78+334fK8sgM9w4oKom8w2rIT7USYu91Xv5jbFpm4pYz9WeWhUusBbpxdAolTiOzjVcOXvkHeV4ZeGUr4iJzIDKnfMv5qBDno1T+rZH9N0jO4MB4IwXUvf7AVotBN9cLbhkUHSp3ig8vDVD1jz7dZnjGHbG67aqY9yd/zs8iy5mScRJ43rmEAJ3vXAQ0E6P3Afdp0zkNnuk94ZxGV0QjUXfrmU47jorsxG6L+739fbN1GdecfrG+szHeP5Ae9PuD33/7X94i8BYVDz6RKcSJTHXh/yz1oPZ4w9RVUF+o7sXpwDb6nWscfCwuEBjl/CQatCmKKctK5EbxmHp7RBnwrsrPqAJK/UpSgUr/IiDYre4DPmWPugimMleqKqoaz0oUXnrJdXe9op+pUtvvX7NehxvPO1YQ7c14+YZ1p7EEjCX2QXMEmCPUZf6/5l/3eT/U8mMSwgAAAABJRU5ErkJggg=="
+        rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/bootstrap-better-nav.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+
+<body>
+    <div class="main container">
+        <header class="navbar navbar-expand-md flex-column flex-lg-row navbar-light bg-white p-4">
+            <button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand ml-1" href="/" aria-label="Barbasol">
+                <img class="img-fluid" src="/img/barbasol.png">
+            </a>
+            <a class="navbar-brand ml-1" href="/" aria-label="Barbasol">
+                <img class="img-fluid pt-2 border-left border-bar" src="/img/teeoff.png">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav bd-navbar-nav ml-auto justify-content-around flex-row">
+                    <li class="nav-item p-2">
+                        <a href="#get-started-section" class="nav-link active">
+                            <strong>How to Get Started</strong>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="#application-form-section" class="nav-link">
+                            <strong>Application Form</strong>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="#products-retailers-section" class="nav-link">
+                            <strong>Products & Retailers</strong>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2 mr-7">
+                        <a href="#faq-section" class="nav-link">
+                            <strong>FAQ</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="jumbotron banner">
+            <div class="row">
+                <div class="col-sm-9 text-center">
+                    <p class="banner-1">GET $20 OFF</p>
+                    <p class="banner-2">YOUR NEXT TEE TIME
+                        <sup>*</sup>
+                    </p>
+                    <p class="banner-3">WITH THE PURCHASE OF ONE (1)</p>
+                    <p class="banner-3">BARBASOL
+                        <sup>&reg;</sup> ULTRA 6 PLUS RAZOR</p>
+                    <p class="banner-4">
+                        <sup>*</sup>MINIMUM $40 BOOKING ON TEEOFF.COM DEAL TIME</p>
+                </div>
+            </div>
+        </div>
+        <section id="get-started-section" class="container">
+            <div class="row">
+                <div class="col text-center mb-3">
+                    <h1>How to Get Started</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <img class="mx-auto" src="../img/razor.png">
+                        <div id="start-1" class="card-title text-center">
+                            <h3>
+                                <span class="display-4">1</span> Purchase Product</h3>
+                        </div>
+                        <div class="card-body">
+                            Purchase any Barbasol Ultra 6 Plus Razor (excluding 1ct disposable) in stores or on retailer websites or any Ultra 6 Plus
+                            Razor product on
+                            <a href="https://Barbasol.com">Barbasol.com</a> between
+                            <strong>5/1/18</strong> and
+                            <strong>9/30/18</strong>.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <img class="mx-auto" src="../img/receipt.png">
+                        <div id="start-2" class="card-title text-center">
+                            <h3>
+                                <span class="display-4">2</span> Upload Receipt</h3>
+                        </div>
+                        <div class="card-body">
+                            Apply and upload your receipt
+                            <strong>within 14 days</strong> of making your purchase. (If you make your purchase on
+                            <a href="https://Barbasol.com">Barbasol.com</a>, you’ll skip this step.)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <img class="mx-auto" src="../img/ball.png">
+                        <div id="start-3" class="card-title text-center">
+                            <h3>
+                                <span class="display-4">3</span> Redeem Promo Code</h3>
+                        </div>
+                        <div class="card-body">
+                            You will receive an email from [INSERT HERE] containing your unique $20 OFF promo code to use on any TeeOff.com listing containing
+                            the DEAL time symbol. (A minimum $40 booking on TeeOff.com is required to redeem the code.)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="application-form-section" class="container appform mt-2">
+            <div class="appform-opacity">
+                <h1 class="text-center pt-5">Application Form</h1>
+                <h5 class="text-center font-italic">All fields are mandatory</h5>
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <form>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="inputFirstname">First Name</label>
+                                        <input type="text" class="form-control" id="inputFirstname" placeholder="First name">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="inputLastname">Last Name</label>
+                                        <input type="text" class="form-control" id="inputLastname" placeholder="Last name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="inputAddressLine1">Address 1</label>
+                                        <input type="text" class="form-control" id="inputAddressLine1" placeholder="Street Address">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="inputAddressLine2">Address 2</label>
+                                        <input type="text" class="form-control" id="inputAddressLine2" placeholder="Line 2">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="inputCity">City</label>
+                                        <input type="text" class="form-control" id="inputCity" placeholder="City">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="inputState">State</label>
+                                        <input type="text" class="form-control" id="inputState" placeholder="State">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="inputPostalCode">ZIP Code</label>
+                                        <input type="text" class="form-control" id="inputPostalCode" placeholder="Postal Code">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="inputCity">Email Address</label>
+                                        <input type="text" class="form-control" id="inputEmail" placeholder="Email Address">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="inputState">Phone Number</label>
+                                        <input type="text" class="form-control" id="inputPhone" placeholder="Phone Number">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="inputBirth">Date of Birth</label>
+                                        <input type="date" class="form-control" id="inputBirth" placeholder="Date of Birth">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <small></small>
+                                        <span class="lead">Upload your receipt</span>
+                                        <span class="receipt font-italic">Please make sure the image of your receipt is clear for us to read. Time and date
+                                            of purchase must be starred or circled. Files must be submitted as a .DOC, .JPG,
+                                            .JPEG or PDF file and must not exceed 2MB. Please don’t forget to circle the
+                                            purchase amount and the date & time of purchase on your receipt. Please also
+                                            make sure the picture of your receipt shows the required information (date, time,
+                                            and purchase amount) and is a clear picture.
+                                        </span>
+                                        </small>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Receipt</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="termscheck">
+                                            <label class="form-check-label" for="defaultCheck2">
+                                                Yes, I have read, understand and agree to all of the Terms & Conditions
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="promotionscheck">
+                                            <label class="form-check-label" for="defaultCheck2">
+                                                Yes, I would like to receive Barbasol promotions and updates
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary px-4">SUBMIT</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="products-retailers-section">
+            <div class="products-section1 text-center">
+                <p>
+                    Eligible Products & Retailers
+                </p>
+            </div>
+            <div class="products-section2 text-center">
+                <h3>
+                    In stores or on Retailer Websites
+                </h3>
+            </div>
+            <div class="row p-3">
+                <div class="col-lg-6">
+                    <div class="card border-0">
+                        <!-- change to figure -->
+                        <img class="mx-auto" src="../img/ultra6_plus_razor.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0">
+                        <img class="mx-auto" src="../img/ultra6_plus_disposable.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-top p-3">
+                *To obtain a TeeOff.com promo code, make a validpurchase ofany one (1)Barbasol Ultra 6 Plus razor product (excluding 1ct
+                disposable) between5/1/18 and9/30/18in stores or onselect retailer websites, or make a valid purchase ofany
+                Ultra 6 Plus Razor product on Barbasol.combetween5/1/18and 9/30/18. For all purchases not made on Barbasol.com,
+                the original receipt and Application Formmust be completed and submitted within fourteen(14) days of originalpurchase.
+                Must be sixteen (16)years of age or older to participatein the promotion. Reward subject to availability
+                and while supplies last. The TeeOff.com promo code is good for $20 off one (1) tee time purchase of at least
+                $40.00 (up to 4 players for the same time, course and transaction) booked on TeeOff.com by PGA TOUR. Limit
+                one(1) Reward per customer email address. Valid on select DEAL Times only. May not be combined with other
+                offers. May not be presented for use at a course. Not valid for prior tee times. Reward will not be returnedor
+                refunded if the tee time booked using the promotional code is canceled/changed. Subject to change. Excludes
+                TeeOff.com by PGA TOUR select courses . Additional restrictions may apply. Promo codes valid until 12/31/18.
+                A minimum spend of $40 for one reservation is required to redeem promo code.Reward valid in the Continental
+                United States (excluding Alaska, Hawaii, Puerto Rico and US territories) only. Additional terms apply. See
+                Terms & Conditionsfor complete details
+            </div>
+            <div class="footer-bottom text-center p-3">
+                Questions? Email[INSERT ADDRESS] Monday through Friday 9 a.m. –5 p.m. ET, excluding public holidays.
+                <br> Terms & Conditions / Privacy Policy
+            </div>
+        </footer>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap-better-nav.min.js"></script>
+    <script src="/js/smooth-scroll.min.js"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>

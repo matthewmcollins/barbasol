@@ -1,0 +1,186 @@
+$font-family-base: 'Roboto';
+$dark-blue: #001f5f;
+$gray: #333333;
+$light-gray: #a6a6a6;
+$dark-gray: #616160;
+$dark-gray2: #585858;
+$primary: $dark-blue;
+$bar-color: #ed6b81;
+$navbar-light-active-color: rgba($bar-color, .9);
+//$font-family-base: 'Tangerine';
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+#start-1, #start-2, #start-3 {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+
+.main {
+    margin-top: 1rem;
+    border: 2px solid $gray;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.border-bar {
+    border-color: $bar-color !important;
+}
+
+.banner {
+    background: url('../img/banner.jpg') no-repeat;
+    min-height: 250px;
+    background-size: cover;
+}
+%banner-text {
+    margin-bottom: 0;
+}
+.banner-1 {
+    @extend %banner-text;
+    font-size: 3rem;
+    font-weight: 600;
+    color: $white;
+    text-shadow: -5px 5px 3px rgba(0,0,0,0.6);
+}
+.banner-2 {
+    @extend %banner-text;
+    font-size: 1.5rem;
+}
+.banner-3 {
+    @extend %banner-text;
+    font-size: 1rem;
+}
+.banner-4 {
+    @extend %banner-text;
+    font-size: 0.75rem;
+}
+.receipt {
+    font-size: 0.8rem;
+    //line-height:0.5;
+}
+
+.appform {
+    background: url('../img/form.jpg') no-repeat;
+    padding: 0;
+    min-height: 340px;
+    background-size: cover;
+}
+.appform-opacity {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.form-control {
+    background-color: transparent;
+    border: 2px solid $dark-gray;
+    -webkit-border-radius: 1;
+    -moz-border-radius: 1;
+         border-radius: 1;
+}
+.custom-file-label {
+    background-color: transparent;
+    border: 2px solid $dark-gray;
+}
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+    content: "UPLOAD"; }
+    .custom-file-label::after {
+        color: $white;
+        background-color: $dark-blue;
+        border-radius: 0 0.25rem 0.25rem 0; }
+
+.products-section1 {
+    padding: 3rem 2rem 2rem 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: $light-gray;
+}
+.products-section2 {
+    padding: 2rem 2rem;
+    background-color: $dark-gray2;
+    color: $white;
+}
+
+.footer-top {
+    font-size: 0.8rem;
+    background-color: $light-gray;
+}
+.footer-bottom {
+    font-size: 0.8rem;
+    background-color: $primary;
+    color: $white;
+}
+#side-menu .contents ul {
+    flex-direction: column !important;
+}
+
+@include media-breakpoint-up(sm) {
+    .banner {
+        background: url('../img/banner-sm.jpg') no-repeat;
+        padding-top:1rem;
+        min-height:270px;
+    }
+    .banner-1 {
+        font-size: 2.75rem;
+    }
+}
+@include media-breakpoint-up(md) {
+    .banner {
+        background: url('../img/banner-md.jpg') no-repeat;
+        min-height:270px;
+    }
+    .banner-1 {
+        font-size: 4.5rem;
+    }
+    .banner-2 {
+        font-size: 2.25rem;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+    .banner-3 {
+        font-size: 1.1rem;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+    .banner-4 {
+        font-size: 0.75rem;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .banner {
+        background: url('../img/banner-lg.jpg') no-repeat;
+        padding-top:4rem;
+        min-height:403px;
+    }
+    .banner-1 {
+        font-size: 6rem;
+    }
+    .banner-2 {
+        font-size: 2.75rem;
+    }
+    .banner-3 {
+        font-size: 1.5rem;
+    }
+    .banner-4 {
+        font-size: 1rem;
+    }
+}
+@include media-breakpoint-up(xl) {
+    .banner {
+        background: url('../img/banner-xl.jpg') no-repeat;
+        min-height:540px;
+    }
+    .banner-1 {
+        font-size: 8rem;
+    }
+    .banner-2 {
+        font-size: 3.5rem;
+    }
+    .banner-3 {
+        font-size: 2rem;
+    }
+    .banner-4 {
+        font-size: 1.25rem;
+    }
+}
