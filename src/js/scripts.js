@@ -21,49 +21,25 @@ $(function() {
     opacity: 1
   }, 300);
 
-  /*
-  $(".col1").delay(450).animate({
-    top: 0,
-    opacity: 1
-  }, 300);
+  $('#carouselExample').on('slide.bs.carousel', function (e) {
 
-  $(".col2").delay(550).animate({
-    top: 0,
-    opacity: 1
-  }, 300);
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 4;
+    var totalItems = $('.carousel-item').length;
 
-  $(".col3").delay(650).animate({
-    top: 0,
-    opacity: 1
-  }, 300);
-
-  $(".col4").delay(750).animate({
-    top: "0",
-    opacity: 1
-  }, 300);
-
-  $(".col5").delay(850).animate({
-    top: 0,
-    opacity: 1
-  }, 300);
-
-  //Fade In video on scroll
-  $(window).scroll(function(){
-    $('.hideme').each( function(i){
-
-      var top_of_object = $(this).position().top;
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-      if( bottom_of_window > top_of_object ){
-        $(this).delay(300).animate({
-          opacity: 1,
-          top: 0
-        }, 500);
-      }
-
-    });
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            }
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+        }
+    }
   });
-*/
-
 });
 
